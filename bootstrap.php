@@ -1,5 +1,5 @@
 <?php
-include(__DIR__."/../sapphire/core/Core.php");
+include(__DIR__."/../framework/core/Core.php");
 
 global $databaseConfig;
 $_SESSION = null;
