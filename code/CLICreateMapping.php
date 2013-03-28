@@ -11,5 +11,9 @@ class CLICreateMapping extends DataObject {
 		$url = Director::absoluteBaseURL();
 		
 		file_put_contents(BASE_PATH."/_ss_environment.php", "<?php\n\$_FILE_TO_URL_MAPPING['{$path}'] = '{$url}';");
-	}	
+	}
+	
+	public function requireTable() { 
+		DB::dontRequireTable($this->class); 
+	}
 }

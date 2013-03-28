@@ -6,3 +6,6 @@ $_SESSION = null;
 
 require_once(__DIR__."/../framework/model/DB.php");
 DB::connect($databaseConfig);
+
+$c = new Controller();
+$c->pushCurrent();
